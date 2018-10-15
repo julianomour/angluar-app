@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <input class="form-control col-md-5 " type="text" [(ngModel)]="cliente.nome" placeholder="nome">
+        <input class="form-control col-md-5 " type="text" [(ngModel)]="cliente.idade" placeholder="idade">
+        <button class="btn btn-primary" type="button" (click)="addCliente()">Adicionar</button>
+      </div>
+      
+      
+      <hr>
+      
+      <ul>
+        <li *ngFor="let item of clientes">{{item.nome}} - {{item.idade}} anos</li>
+      </ul>
+    </div>
+  </div>
+</div>
